@@ -11,5 +11,5 @@ Tendras tres botones los cuales son:
 
 Al trminar la partida te dira si empataste, ganaste tu o gano e sistema
 
-Si quieres probar el juego desde la web ingresa [aqui](https://juego-piedra-papel-tijera.netlify.app)
+Si quieres probar el juego desde la web ingresa [aqui](https://juego-tresenraya.netlify.app)
  
