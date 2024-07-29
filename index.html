@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="scripts/control.js"></script>
+    <title>Caro</title>
+</head>
+<body>
+    <h1>Tres en raya</h1>
+    <div>
+        <span>Elige tu símbolo: </span>
+        <button id="choose-x">X</button>
+        <button id="choose-o">O</button>
+    </div>
+    <div>
+        <span>Elige tu jugada: </span>
+        <button id="choose-turn-player">Jugador Primero</button>
+        <button id="choose-turn-computer">Sistema Primero</button>
+    </div>
+    <h2 id="premio">Has ganado !!!!</h2>
+    <button id="reiniciar" disabled>Reiniciar Juego</button>
+    <div id="tablero">
+        <button data-x="0" data-y="0"></button>
+        <button data-x="0" data-y="1"></button>
+        <button data-x="0" data-y="2"></button>
+        <button data-x="1" data-y="0"></button>
+        <button data-x="1" data-y="1"></button>
+        <button data-x="1" data-y="2"></button>
+        <button data-x="2" data-y="0"></button>
+        <button data-x="2" data-y="1"></button>
+        <button data-x="2" data-y="2"></button>
+    </div>
+</body>
+</html>

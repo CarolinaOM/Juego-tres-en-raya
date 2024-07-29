@@ -1,0 +1,132 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Evita el scroll */
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ajustado a 100vh para asegurar que ocupe toda la ventana */
+    margin: 0;
+    padding: 0; /* Eliminado padding para evitar desbordamiento */
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0; /* Asegura que los títulos no causen desbordamiento */
+}
+
+h2#premio {
+    color: lightblue;
+    margin: 20px 0;
+    display: none; /* Initially hidden */
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0aa6e4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em; /* Cambiado a em para escalabilidad */
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #a3d4fc;
+}
+
+button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Reset Button */
+#reiniciar {
+    padding: 8px 15px; 
+    font-size: 1.2em; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    display: block;
+    margin: 20px auto; 
+    max-width: 70%; /* Ajustado para responsividad */
+}
+
+#reiniciar:active {
+    transform: scale(0.95); 
+}
+
+/* Game Board */
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px; /* Ajustado para reducir el espacio entre los botones */
+    width: 50vmin; /* Ajustado para ser relativo al tamaño de la ventana */
+    height: 50vmin; /* Ajustado para ser relativo al tamaño de la ventana */
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+#tablero > button {
+    width: 100%;
+    height: 100%;
+    font-size: 7vmin; /* Ajustado para ser relativo al tamaño de la ventana */
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid #0aa6e4;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#tablero > button:hover:not(:disabled) {
+    background-color: #e9ecef;
+}
+
+#texto {
+    visibility: hidden;
+    color: blue;
+    font-size: 1.5em; /* Reducido tamaño de fuente */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    #tablero > button {
+        font-size: 5vmin; /* Ajustado para pantallas pequeñas */
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #tablero > button {
+        font-size: 6vmin; /* Ajustado para pantallas medianas */
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+}
