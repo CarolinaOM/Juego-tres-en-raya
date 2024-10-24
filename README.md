@@ -13,3 +13,4 @@ Al trminar la partida te dira si empataste, ganaste tu o gano e sistema
 
 Si quieres probar el juego desde la web ingresa [aqui](https://juego-tresenraya.netlify.app)
  
+![tres en raya](https://github.com/user-attachments/assets/8f7f4c4a-3bdc-47d9-988b-53274938e471)
