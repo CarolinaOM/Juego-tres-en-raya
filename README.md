@@ -6,7 +6,8 @@ Este código fuente implementa el clásico juego de Tres en Raya (Tic-Tac-Toe). 
 1. Selección de jugador: elige si deseas ser X u O.
 2. Turno inicial: decide si quieres comenzar tú o que inicie el sistema.
 3. Reiniciar partida: reinicia el juego para comenzar una nueva partida.
-4. Al finalizar cada partida, el sistema mostrará el resultado, indicando si hubo empate, si ganaste tú o si ganó el sistema.
+
+### Al finalizar cada partida, el sistema mostrará el resultado, indicando si hubo empate, si ganaste tú o si ganó el sistema.
 
 Para probar el juego directamente desde la web, ingresa [aqui](https://juego-tresenraya.netlify.app)
  
